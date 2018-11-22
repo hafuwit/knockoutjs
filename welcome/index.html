@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js'></script>
+    </head>
+    <body>
+        <p>First name: <input data-bind="value: first_name" /></p>
+        <p>Last name: <input data-bind="value: last_name" /></p>
+        <!-- <p>Full name: <strong data-bind="text: full_name"></strong></p>
+        <button data-bind="click: capitalizeLastName">Go caps</button>
+        <script type="text/javascript" src="index.js"></script> -->
+        <p>Full name: <strong data-bind="text: full_name()"></strong></p>
+        <button data-bind="event: { click: capitalizeLastName }">Go caps</button>
+        <script type="text/javascript" src="example.js"></script>
+    </body>
+</html>
